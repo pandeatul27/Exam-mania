@@ -1,0 +1,205 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+ 
+/* navigation bar */
+.navbar
+{
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    width:100%;
+}
+.navbar::before
+{
+    content: "";
+   background-color: black;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.7;
+}
+.navbar ul{
+    display: flex;
+    text-align: center;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 0px 18px;
+    margin: 8px 2px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    cursor: pointer;
+    color: rgba(245, 245, 245, 0.637);
+    /* background-color: #717171; */
+
+}
+/* search bar */
+.navbar #search
+{
+    display: flex;
+    position: absolute;
+    left: 80%; 
+}
+.navbar #search .search
+{
+    display: inline-block;
+}
+.navbar #search input{
+    border: 0px solid black;
+    border-radius: 10px 0px 0px 10px;
+    padding: 4px 8px;
+}
+.navbar #search input:hover{
+    border: 0px solid black;
+    font-weight: bold;
+}
+.navbar #search button{
+    padding: 4px;
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+}
+.navbar #search button:hover{
+    cursor: pointer;
+
+}
+
+/* home */
+#home .home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+}
+.h-primary{
+    font-size: 4.5rem;
+}
+.h-secondary{
+    font-size: 2.5rem;
+}
+
+/* slideshow */
+#awards{
+    position: relative;
+    background: #f1f1f1f1;
+}
+#slides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+#slides .prev,.next{
+    position: absolute;
+    width: auto;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 7px;
+    margin: 4px;
+    border-radius: 5px 0px 0px 5px;
+}
+#slides .next{
+    right: 0px;
+    border-radius: 0px 5px 5px 0px;
+}
+#slides .prev{
+    left: 0px;
+    /* border-radius: 0px 5px 5px 0px; */
+}
+#slides .prev:hover,.next:hover{
+   background-color: rgb(8, 8, 8);
+   color: whitesmoke;
+}
+
+#slides q{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+#slides .comment p{
+    color: lightblue;
+    font-style: italic;
+    justify-content: center;
+}
+
+.dot-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 14px 0px;
+    background: #ddd;
+    height: 50px;
+}
+.dot-container .dot{
+height: 14px;
+width: 14px;
+margin: auto 4px;
+border-radius: 50%;
+background-color: #bbb;
+transition: background-color 0.6s ease;
+}
+.dot:hover{
+cursor: pointer;
+background-color: #717171;
+}
+/* subjects */
+#subjects{
+    position: relative;
+}
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     height: 20rem;
+}
+.sub .subject{
+    border: 2px solid black;
+    width: 29%;
+    margin: 8px;
+    padding: 6px;
+    height: 12rem;
+}
+.sub .prev,.next{
+    position: absolute;
+    width: auto;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 7px;
+    margin: 4px;
+    border-radius: 5px 0px 0px 5px;
+}
+.sub .next{
+    right: 0px;
+    border-radius: 0px 5px 5px 0px;
+}
+.sub .prev{
+    left: 0px;
+    /* border-radius: 0px 5px 5px 0px; */
+}
+.sub .prev:hover,.next:hover{
+   background-color: rgb(8, 8, 8);
+   color: whitesmoke;
+}
+
+/* footer */
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
